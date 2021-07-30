@@ -22,7 +22,14 @@ $(function() {
             if(data) {
                 $("#nickWrap").hide();
                 $("#contentWrap").show();
-            } else {
+            } else if ($nickname.val() == ""){
+                $nickError.html (`
+                <div class="alert alert-danger">
+                    pone algo marmota
+                </div>
+                `);
+            }
+             else {
                 $nickError.html (`
                     <div class="alert alert-danger">
                         Ya existe ese usuario pa

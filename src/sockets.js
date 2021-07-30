@@ -7,7 +7,7 @@ module.exports = function (io) {
 
 
         socket.on("new user", (data, cb) => {
-            if ( nicknames.indexOf(data) != -1){
+            if ( nicknames.indexOf(data) != -1 || data == ""){
                 cb(false);
             } else {
                 cb(true);
