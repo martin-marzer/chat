@@ -6,15 +6,20 @@ body {
     display: none;
 }
 
-footer{
-    background: #faf5f5;
-    padding: 20px 0;
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    width:100%;
+.contenedor {
+    position: relative;
+    min-height: 100vh;
+    height: 2000px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #faf5f5;   
+    padding-top: 10px;       
   }
-  
+
+
   .footer_container{
     max-width: 1300px;
     margin: auto;
