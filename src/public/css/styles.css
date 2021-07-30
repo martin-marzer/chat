@@ -5,6 +5,42 @@ body {
 #contentWrap {
     display: none;
 }
+
+footer{
+    background: #faf5f5;
+    padding: 20px 0;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+  }
+  
+  .footer_container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .logo{
+    width: 180px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+
+
+
+
+  .responsive {
+    margin-top: 10%;
+    }
+
+
 @media (max-width:768px) {
     body {
         background-image: url("/images/elpapu.jpg");
@@ -18,6 +54,7 @@ body {
     }
     .responsive {
         width: 90%;
+    
     }
 }
 

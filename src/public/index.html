@@ -10,60 +10,67 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    <div style="height: 2000px;">
+        <nav class="navbar navbar-light bg-warning" >
+            <a class="navbar-brand mx-auto" href="/">JS CHAT</a>
+        </nav>
 
-    <nav class="navbar navbar-light bg-warning" >
-        <a class="navbar-brand mx-auto" href="/">JS CHAT</a>
-    </nav>
-
-    <div class="card col-md-4 mt-5 mx-auto responsive" id="nickWrap">
-        <div class="card-header">
-            <h3>Pone tu nombre prro :v :</h3>
+        <div class="card col-md-4 mt-10 mx-auto responsive" id="nickWrap">
+            <div class="card-header">
+                <h3>Pone tu nombre prro :v :</h3>
+            </div>
+            <p id="nickError"></p>
+            <div class="card-body">
+                <form id="nickForm">
+                    <input type="text" id="nickname" class="form-control">
+                    <button type="submit" class="btn btn-warning" style="width: 100%;
+                    margin: 20px auto;"">
+                        <i class="fas fa-location-arrow"></i>Enviar
+                    </button>
+                </form>
+            </div>
         </div>
-        <p id="nickError"></p>
-        <div class="card-body">
-            <form id="nickForm">
-                <input type="text" id="nickname" class="form-control">
-                <button type="submit" class="btn btn-warning">
-                    <i class="fas fa-location-arrow"></i>Enviar
-                </button>
-            </form>
-        </div>
-    </div>
 
-    <div class="container" id="contentWrap">
-        <div class="row mt-4">
-            <div class="col-md-6 offset-md-1">
-                <div class="card">
-                    <div class="card-header">
-                        <h4>El chat del papu :V</h4>
-                    </div>
-                
-
-                    <div id="chat" class="card-body"></div>
-                    <form id="message-form" class="card-footer">
-                        <div class="input-group">
-                            <input type="text" id="message" class="form-control">
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-warning">
-                                    <i class="fas fa-location-arrow"></i>Enviar
-                                </button>
-                            </div>
+        <div class="container" id="contentWrap" style="margin-top: 10%;">
+            <div class="row">
+                <div class="col-md-6 offset-md-1">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>El chat del papu :V</h4>
                         </div>
-                    </form>
                     
+
+                        <div id="chat" class="card-body"></div>
+                        <form id="message-form" class="card-footer">
+                            <div class="input-group">
+                                <input type="text" id="message" class="form-control">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-warning">
+                                        <i class="fas fa-location-arrow"></i>Enviar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
                 </div>
-            </div>
-            <div class="card col-md-3" id="responsive-user">
-                <div class="card-header">
-                    <h3>Usuarios anashe</h3>
-                </div>
-                <div class="card-body">
-                    <div id="usernames"></div>
+                <div class="card col-md-3" id="responsive-user">
+                    <div class="card-header">
+                        <h3>Usuarios anashe</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="usernames"></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="footer_container">
+                <div class="logo"> <p>El papu productions </p></div>
+                <p>Bananirou Enterprise © 2021 All Rights Reserved.</p>
+                </div>
+        </footer>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js" charset="utf-8"></script>
     <script src="/js/main.js" charset="utf-8"></script>
